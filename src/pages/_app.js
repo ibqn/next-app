@@ -1,11 +1,11 @@
-import '../styles/globals.css'
+import 'styles/globals.css'
 import { ThemeProvider } from 'styled-components'
 import PropTypes from 'prop-types'
 import Head from 'next/head'
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
-import theme from '../theme'
-import GlobalStyle from '../components/global-style'
+import theme from 'theme'
+import GlobalStyle from 'components/global-style'
 
 function MyApp({ Component, pageProps }) {
   return (
