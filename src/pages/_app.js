@@ -1,4 +1,3 @@
-import 'styles/globals.css'
 import { ThemeProvider } from 'styled-components'
 import PropTypes from 'prop-types'
 import Head from 'next/head'

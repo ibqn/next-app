@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import styles from 'styles/home.module.css'
 import styled from 'styled-components'
 
 import Container from '@material-ui/core/Container'
@@ -13,6 +12,16 @@ const Title = styled.h1`
   font-size: 50px;
   color: ${({ theme }) => theme.palette.primary.main};
 `
+
+const Main = styled.div`
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+
 const Home = () => {
   return (
     <>
@@ -21,11 +30,11 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={styles.container}>
+      <Main>
         <Title>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </Title>
-      </div>
+      </Main>
       <Container maxWidth="sm">
         <Box my={4}>
           <Typography variant="h4" component="h1" gutterBottom>
